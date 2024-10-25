@@ -8,7 +8,7 @@ function setup() {
   
   const message =
     "This is a template repository\nfor the course Laboratorio di Computergrafica\nCommunication Design, Politecnico di Milano";
-  textAlign(CENTER, CENTER);
+  //textAlign(CENTER, CENTER);
   textSize(16);
   text(message, width / 2, height / 2);
 }
