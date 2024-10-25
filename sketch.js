@@ -1,18 +1,27 @@
-function preload() {
-  // put preload code here
-}
-
 function setup() {
+  noLoop();
   createCanvas(windowWidth, windowHeight);
-  // put setup code here
-  
-  const message =
-    "This is a template repository\nfor the course Laboratorio di Computergrafica\nCommunication Design, Politecnico di Milano";
-  //textAlign(CENTER, CENTER);
-  textSize(16);
-  text(message, width / 2, height / 2);
 }
 
 function draw() {
-  // put drawing code here
+  background("white");
+
+  fill("brown");
+  
+  noStroke();
+  rect(110, 110, 110, 110);
+  noStroke();
+  let columns = windowWidth / (110+10);
+  let rows = windowHeight / (110+20);
+
+  for (let i = 0; i < columns; i++) {
+    for (let r = 0; r < rows; r++) {
+     let xPos = i * 120 + random(-5, 5);
+    rect (xPos, r * 130, 110, 110);
+  }
 }
+}
+
+  fill("orange");
+  noStroke();
+  rect(110, 110, 110, 110);
